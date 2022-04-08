@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>
+    <% if (locals.title) { %>
+    <%=locals.title%>
+    <% } else { %>PeerJS
+    <% } %>
+  </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Language" content="en-us">
+  <meta name="description" content="Where peers connect and data channels easily.">
+  <meta name="keywords" content="peerjs datachannel p2p webrtc chrome firefox api
+library peer js nodejs node javascript">
+
+  <link href="/css/style.css" rel="stylesheet" type="text/css">
+  <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/button.css" rel="stylesheet" type="text/css">
+  <link href="/css/lato.css" rel="stylesheet" type="text/css"/>
+
+  <link rel="shortcut icon" href="/media/favicon.ico" />
+</head>
+
+<body>
+
+  <a href="https://github.com/peers" id="gh-link">
+    <img style="z-index: 9999;position: absolute; top: 0; right: 0; border: 0;"
+      src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
+  </a>
+  <div id="container">
+    <div id="nav-wrap">
+      <div class="sign">
+        PEER
+        <span class="highlight">JS</span>
+      </div>
+      <div id="nav">
+        <a href="/" <% if (locals.page==='home' ) {%>class="active" <% } %>>Home</a>
+        <a href="/docs#start" <% if (locals.page==='start' ) {%>class="active" <% } %>>Get Started</a>
+        <a href="/docs#api">API Reference</a>
+        <a href="/examples">Examples</a>
+        <a href="/peerserver" <% if (locals.page==='peerserver' ) {%>class="active" <% } %>>PeerServer Cloud</a>
+        <a href="https://stats.uptimerobot.com/B7Ww3sDBVz" target="_blank">Status page</a>
+        <a href="/team" <% if (locals.page==='team' ) {%>class="active" <% } %>>Team</a>
+      </div>
+    </div>
+    <div id="content">
+      <div id="text">
+        <%-body%>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
