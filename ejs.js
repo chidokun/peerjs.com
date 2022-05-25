@@ -1,7 +1,7 @@
 const ejs = require("ejs");
 const fs = require("fs");
 
-const PEERJS_VERSION = "1.3.2";
+const PEERJS_VERSION = "1.4.5";
 
 function render(file, data) {
   ejs.renderFile("./views/" + file + ".ejs", data, {}, (err, str) => {
